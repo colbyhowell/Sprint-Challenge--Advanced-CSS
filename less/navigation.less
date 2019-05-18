@@ -1,1 +1,33 @@
 // Navigation code here
+
+h1{
+    .flex-align(center, center);
+    font-size: 4rem;
+    color: @ebony-clay;
+    padding: 2% 0% 3% 0%;
+    background-color: @wild-sand;
+}
+
+nav{
+    .flex-align(center, center);
+    flex-flow: row;
+    background-color: @wild-sand;
+
+        a{
+            color: @ebony-clay;
+            text-decoration: none;
+            font-size: 2rem;
+            .left-right-margin(2%, 2%);
+            padding-bottom: 1%;
+            font-weight: 600;
+
+            @media @phone {
+                font-size: 1.8rem;
+              }
+        }
+
+        a:hover{
+            color: @shuttle-gray;
+        }
+}
+
