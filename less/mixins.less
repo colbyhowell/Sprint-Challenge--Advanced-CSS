@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flex-align(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.left-right-margin(@left, @right){
+    margin-left: @left;
+    margin-right: @right;
+}
+
+.full-button(@background, @font-col, @fs, @radius){
+    background-color: @background;
+    color: @font-col;
+    font-size: @fs;
+    border-radius: @radius;
+}
+
+.reverse(){
+    display: flex;
+    flex-flow: column-reverse; 
+}
